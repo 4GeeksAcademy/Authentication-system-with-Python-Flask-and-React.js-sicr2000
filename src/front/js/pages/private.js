@@ -20,7 +20,7 @@ export const Private = () => {
               <table style={{ height: "100%" }}>
                 <tbody>
                   <tr>
-                    <td className="align-middle">
+                    <td className="align-middle justify-content-center">
                       <h1
                         className="text-white col-12 animate-charcter"
                         style={{ fontSize: "100px", margin: "220px" }}
