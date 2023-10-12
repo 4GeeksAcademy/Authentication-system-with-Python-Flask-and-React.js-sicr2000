@@ -47,6 +47,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
       },
       login: async (email, password) => {
+        
         try {
           const resp = await fetch(process.env.BACKEND_URL + "/api/token", {
             method: "POST",
@@ -77,9 +78,10 @@ const getState = ({ getStore, getActions, setStore }) => {
               Authorization: "Bearer " + store.token,
             },
           });
-          if (resp.status == 401) {
+          if (resp.status == 401 || resp.status == 422) {
+            localStorage.removeItem("token")
             setStore({ profile: null, token: null });
-            return;
+            return console.log(store);
           }
           const data = await resp.json();
           setStore({ profile: data, token: store.token });

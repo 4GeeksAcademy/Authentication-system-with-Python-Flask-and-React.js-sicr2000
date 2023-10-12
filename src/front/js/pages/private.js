@@ -25,7 +25,7 @@ export const Private = () => {
                         className="text-white col-12 animate-charcter"
                         style={{ fontSize: "100px", margin: "220px" }}
                       >
-                        Welcome {store.profile.name}
+                        Welcome back {store.profile.name}
                       </h1>
                     </td>
                   </tr>

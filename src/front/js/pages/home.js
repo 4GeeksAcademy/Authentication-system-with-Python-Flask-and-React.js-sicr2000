@@ -15,14 +15,13 @@ export const Home = () => {
     <>
       <div className="text-center body">
         <div className="h-100 row justify-content-center">
-          <div className="col-8 text-center">
+          <div className="col-12 text-center">
             <table style={{ height: "100%" }}>
               <tbody>
                 <tr>
                   <td className="align-middle">
                     <h1
-                      className="text-white animate-charcter
-          {"
+                      className="text-white animate-charcter"
                       style={{ fontSize: "100px", margin: "220px" }}
                     >
                       Welcome to the Zusset World
